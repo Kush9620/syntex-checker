@@ -1,0 +1,26 @@
+line 1 [20]: #include <iostream>
+line 2 [20]: class SampleClass {
+line 3 [23]: public                
+line 4 [20]:     void display();
+line 5 [23]: private               
+line 6 [14]:     int value
+line 7 [23]: protected;            
+line 8 [8]: public:
+line 9 [29]:     void setValue(int val) {
+line 10 [21]:         value = val;
+line 11 [6]:     }
+line 12 [21]:     int getValue() {
+line 13 [22]:         return value;
+line 14 [6]:     }
+line 15 [2]: }
+line 16 [21]: class AnotherClass {
+line 17 [24]:     public:            
+line 18 [21]:     AnotherClass() {
+line 19 [54]:         std::cout << "Constructor of AnotherClass\n";
+line 20 [6]:     }
+line 21 [18]:     void show() {
+line 22 [38]:         std::cout << "Show method\n";
+line 23 [6]:     }
+line 24 [24]:     private:           
+line 25 [24]:     int num;           
+line 26 [3]: };

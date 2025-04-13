@@ -1,0 +1,34 @@
+#include <iostream>
+
+class SampleClass {
+public                // Error: Missing colon after public
+    void display();
+
+private               // Error: Missing colon after private
+    int value
+
+protected;            // Error: Extra semicolon after protected
+
+public:
+    void setValue(int val) {
+        value = val;
+    }
+
+    int getValue() {
+        return value;
+    }
+}
+
+class AnotherClass {
+    public:            // Error: Access specifier should be at the beginning or end of class members
+    AnotherClass() {
+        std::cout << "Constructor of AnotherClass\n";
+    }
+
+    void show() {
+        std::cout << "Show method\n";
+    }
+    private:           // Error: Missing colon after private
+
+    int num;           // Error: Extra semicolon in a class declaration without colon can be confusing
+};
